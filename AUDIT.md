@@ -4,3 +4,4 @@
 | `filterAndSortBooks` | task5-utils.ts | Да | Виджет "Популярные новинки" |
 | `addBook` | task2-functions.ts | Нет | Удалить — инкапсулировано в BookCatalog |
 | `removeBook` | task2-functions.ts | Нет | Удалить — инкапсулировано в BookCatalog |
+| `getBook` | task2-functions.ts | Нет | Удалить — поиск по id делается через getBooks().find() |
