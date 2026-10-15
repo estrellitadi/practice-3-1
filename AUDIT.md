@@ -5,3 +5,4 @@
 | `addBook` | task2-functions.ts | Нет | Удалить — инкапсулировано в BookCatalog |
 | `removeBook` | task2-functions.ts | Нет | Удалить — инкапсулировано в BookCatalog |
 | `getBook` | task2-functions.ts | Нет | Удалить — поиск по id делается через getBooks().find() |
+| `formatBook` | task1-types.ts | Нет | Удалить — форматирование теперь в методе BookClass.format() |

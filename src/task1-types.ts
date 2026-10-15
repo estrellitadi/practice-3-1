@@ -17,14 +17,6 @@ export type Catalog = Record<string, Book>;
 // TODO 3: Объявите тип BookFilter как функцию, которая принимает Book и возвращает boolean
 export type BookFilter = (book: Book) => boolean;
 
-
-// Функция formatBook(book: Book): string в формате: "Title (Year) — Authors"
-export function formatBook(book: Book): string {
-  const yearStr = book.year !== undefined ? ` (${book.year})` : "";
-  const authorsStr = book.authors.join(", ");
-  return `${book.title}${yearStr} — ${authorsStr}`;
-}
-
 // Функция calculateAverageYear(books: Book[]): number возвращает средний год издания. Если книг нет или у них нет года — вернуть 0.
 /**
  * @deprecated Сейчас функция не используется на сайте, в main.ts. Понадобится позже для функции отображения среднего года всех книг в коллекции.

@@ -1,40 +1,9 @@
 import { describe, it, expect } from "vitest";
-import { formatBook, calculateAverageYear } from "../src/task1-types";
+import { calculateAverageYear } from "../src/task1-types";
 import type { Book } from '../src/task1-types';
 
 describe("Task 1: Интерфейсы", () => {
-  const bookWithYear: Book = {
-    id: "1",
-    title: "TypeScript Guide",
-    authors: ["John Doe", "Jane Smith"],
-    year: 2023,
-  };
 
-  const bookWithoutYear: Book = {
-    id: "2",
-    title: "JavaScript Basics",
-    authors: ["Alice"],
-  };
-
-  const bookWithRating: Book = {
-    id: "3",
-    title: "Advanced TS",
-    authors: ["Bob"],
-    year: 2022,
-    rating: 4.5,
-  };
-
-  it("formatBook должен форматировать книгу с годом", () => {
-    expect(formatBook(bookWithYear)).toBe("TypeScript Guide (2023) — John Doe, Jane Smith");
-  });
-
-  it("formatBook должен форматировать книгу без года", () => {
-    expect(formatBook(bookWithoutYear)).toBe("JavaScript Basics — Alice");
-  });
-
-  it("formatBook должен форматировать книгу с рейтингом (рейтинг не выводится)", () => {
-    expect(formatBook(bookWithRating)).toBe("Advanced TS (2022) — Bob");
-  });
 
   it("calculateAverageYear должен считать средний год", () => {
     const books: Book[] = [
